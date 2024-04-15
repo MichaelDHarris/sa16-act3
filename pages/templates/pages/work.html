@@ -1,0 +1,45 @@
+{% load static %}
+<style>
+    h1 {text-align: center;}
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+    }
+    
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #555;
+      color: white;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 10px;}
+    .text {
+      text-align: center;
+    }
+    </style>
+    <p> <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/work">Work</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul> </p>
+    <h1>My Greatest Works</h1>
+    <div class='text'><p>(I built these)</p></div>
+    <div class="grid-container">
+    <div class="grid-item"><img src="{% static 'eiffel_tower.jpg' %}"></div>
+    <div class="grid-item"><img src="{% static 'leaning_tower.jpg' %}"></div>
+    <div class="grid-item"><img src="{% static 'stonehenge.jpg' %}"></div>
+    <div class="grid-item"><img src="{% static 'thepyramids.jpg' %}"></div>
+    </div>
+    
